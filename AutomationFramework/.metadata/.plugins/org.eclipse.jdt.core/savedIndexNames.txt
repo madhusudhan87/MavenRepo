@@ -1,0 +1,1 @@
+INDEX VERSION 1.130+C:\Users\santo\OneDrive\Desktop\Maven Project\MavenRepos-master\MavenRepos-master\AutomationFramework\.metadata\.plugins\org.eclipse.jdt.core
