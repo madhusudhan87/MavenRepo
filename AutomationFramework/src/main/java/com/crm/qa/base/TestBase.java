@@ -5,12 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
-
+import com.crm.qa.testcases.ContactsPageTest;
 import com.crm.qa.util.TestUtil;
 
 
@@ -18,7 +18,7 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	
+	public static Logger log=Logger.getLogger(ContactsPageTest.class);
 	
 	
 	public TestBase(){
@@ -42,6 +42,7 @@ public class TestBase {
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\santo\\OneDrive\\Desktop\\Maven Project\\MavenRepos-master\\MavenRepos-master\\AutomationFramework\\resources\\drivers\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
+			log.info("launching chrome browser");
 		}
 		
 		

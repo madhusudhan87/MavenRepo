@@ -26,6 +26,7 @@ public class ContactsPageTest extends TestBase{
 	@BeforeMethod
 	public void setUp(){
 		initialization();
+	
 		loginPage = new LoginPage();//so that i can acess loginpage method
 		contactsPage = new ContactsPage();
 		homePage = loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
